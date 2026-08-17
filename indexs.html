@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieGo - Online Food Delivery</title>
+    <link rel="stylesheet" href="./stylee.css">
+    <a href="#home" class="home-link"></a>
+</head>
+<body>
+
+<!--Navbar-->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="FoodieGo">
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul id="nav-links">
+            <li class="item"><a href="#Home">Home</a></li>
+            <li class="item"><a href="#about">About Us</a></li>
+            <li class="item"><a href="#services-section">Services</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search food...">
+            </div>
+        </div>
+    </nav>
+
+    <!--  HOME SECTION  -->
+    <section id="Home">
+        <div class="home-content">
+            <h1 class="h-primary">Welcome to Your Favorite Food Destination</h1>
+            <p class="home-p">At FoodieGo, we believe that great food brings people together. That's why we connect you with top-rated restaurants, offering a wide variety of delicious meals prepared with fresh ingredients and delivered with care.</p>
+            <button class="btn" onclick="document.getElementById('services-section').scrollIntoView({behavior:'smooth'})">Order Now</button>
+        </div>
+    </section>
+
+    <!--  SERVICES SECTION -->
+    <section class="Services-container" id="services-section">
+        <h1 class="h-primary center">Our Services</h1>
+        <h3 class="service-title">Delicious meals delivered with love ❤️</h3>
+
+        <div id="services">
+            <div class="box">
+                <img src="./iamge2.avif" alt="Delicious Pizza">
+                <h2 class="h-seconadry center">Delicious Pizza</h2>
+                <p class="box-p center">Enjoy freshly baked pizzas topped with premium ingredients, rich cheese, and authentic flavors. Perfect for every craving and every occasion.</p>
+                <button class="btnn">Order Now</button>
+            </div>
+
+            <div class="box">
+                <img src="./image4.avif" alt="Crispy Fried Chicken">
+                <h2 class="h-seconadry center">Crispy Fried Chicken</h2>
+                <p class="box-p center">Treat yourself to crispy, juicy fried chicken prepared with special spices and served fresh. Every bite is packed with delicious flavor.</p>
+                <button class="btnn">Order Now</button>
+            </div>
+
+            <div class="box">
+                <img src="./image3.avif" alt="Juicy Burgers">
+                <h2 class="h-seconadry center">Juicy Burgers</h2>
+                <p class="box-p center">Savor our delicious burgers made with tender patties, fresh vegetables, and signature sauces for an unforgettable taste in every bite.</p>
+                <button class="btnn">Order Now</button>
+            </div>
+
+            <div class="box">
+                <img src="./images delivery.jpeg" alt="Fast Delivery">
+                <h2 class="h-seconadry center">Fast & Reliable Delivery</h2>
+                <p class="box-p center">Enjoy quick, safe, and hassle-free food delivery right to your doorstep. We ensure every order arrives hot, fresh, and on time.</p>
+                <button class="btnn">Explore Service</button>
+            </div>
+
+            <div class="box">
+                <img src="./image5.png" alt="Fresh Ingredients">
+                <h2 class="h-seconadry center">Fresh Ingredients, Better Taste</h2>
+                <p class="box-p center">Every dish begins with handpicked vegetables and high-quality ingredients, ensuring fresh flavors and a healthy dining experience in every bite.</p>
+                <button class="btnn">View Menu</button>
+            </div>
+
+            <div class="box">
+                <img src="./cook.png" alt="Professional Chefs">
+                <h2 class="h-seconadry center">Prepared by Professional Chefs</h2>
+                <p class="box-p center">Our experienced chefs prepare every dish with passion, precision, and the finest ingredients, ensuring every bite is full of rich flavor and exceptional quality.</p>
+                <button class="btnn">Meet Our Chefs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION  -->
+    <section class="achievements">
+        <div class="achievement-heading">
+            <h2>Our Achievements</h2>
+            <p class="ach-p">We are committed to delivering exceptional food and outstanding service. Our achievements reflect the trust and satisfaction of our valued customers.</p>
+        </div>
+        <div class="achievement-container">
+            <div class="achievement-box">
+                <img src="./done.png" alt="Orders Delivered">
+                <h3>1000+</h3>
+                <p class="ach-item-p">Orders Delivered</p>
+            </div>
+            <div class="achievement-box">
+                <img src="./custamor.png" alt="Happy Customers">
+                <h3>500+</h3>
+                <p class="ach-item-p">Happy Customers</p>
+            </div>
+            <div class="achievement-box">
+                <img src="./cookimage.png" alt="Expert Chefs">
+                <h3>15+</h3>
+                <p class="ach-item-p">Expert Chefs</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT SECTION  -->
+    <section class="contact" id="contact">
+      
+        <div id="contact-box">
+            <form action="" class="contact-form">
+                <h5>Contact Page</h5>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="number" name="number" id="number" placeholder="Enter Your Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Write your message here..."></textarea>
+                </div>
+                <button class="btnnn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <h1 class="about-heading">About Us</h1>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="./image8.jpg" alt="Food Delivery">
+            </div>
+            <div class="about-content">
+                <span class="about-span">Welcome to FoodieGo</span>
+                <h2>Fresh Food Delivered Straight To Your Doorstep</h2>
+                <p class="about-p">FoodieGo is dedicated to bringing your favorite meals directly to your doorstep with speed, freshness, and quality. From delicious burgers and pizzas to healthy meals, we make every order a memorable experience.</p>
+                <div class="about-features">
+                    <div class="feature-card">🥗 Fresh Ingredients</div>
+                    <div class="feature-card">🛵 Fast Delivery</div>
+                    <div class="feature-card">👨‍🍳 Expert Chefs</div>
+                    <div class="feature-card">💖 Customer Satisfaction</div>
+                </div>
+                <button class="about-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COUNTER SECTION ===== -->
+    <section class="counter">
+        <div class="counter-box">
+            <h2>500+</h2>
+            <p class="counter-p">Happy Customers</p>
+        </div>
+        <div class="counter-box">
+            <h2>50+</h2>
+            <p class="counter-p">Delicious Dishes</p>
+        </div>
+        <div class="counter-box">
+            <h2>30 Min</h2>
+            <p class="counter-p">Fast Delivery</p>
+        </div>
+        <div class="counter-box">
+            <h2>24/7</h2>
+            <p class="counter-p">Customer Support</p>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <img src="logo.png" alt="FoodieGo Logo">
+                <p class="footer-desc">FoodieGo brings your favorite meals to your doorstep — fresh, fast, and full of flavor. Order from top restaurants anytime, anywhere.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="YouTube">▶️</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Menu</h4>
+                <ul>
+                    <li><a href="#services-section">Delicious Pizza</a></li>
+                    <li><a href="#services-section">Juicy Burgers</a></li>
+                    <li><a href="#services-section">Fried Chicken</a></li>
+                    <li><a href="#services-section">Fresh Salads</a></li>
+                    <li><a href="#services-section">Desserts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-list">
+                    <li>📍 123 Food Street, Peshawar, PK</li>
+                    <li>📞 +92 300 1234567</li>
+                    <li>✉️ info@foodiego.com</li>
+                    <li>🕐 Mon–Sun: 9AM – 11PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom" style="background-color: white; color: brown;" >
+            <p style="color: brown;" class="footer-bottom-p">© 2024 FoodieGo. All rights reserved. Made with ❤️ for food lovers.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu on nav link click (mobile)
+        document.querySelectorAll('#nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Sticky navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+
+        const homeLink = document.querySelector('.home-link');
+const heading = document.querySelector('.hero h1');
+
+function playHeadingAnimation(){
+
+    heading.classList.remove("show-animation");
+
+    void heading.offsetWidth;
+
+    heading.classList.add("show-animation");
+}
+
+homeLink.addEventListener("click", function(){
+
+    playHeadingAnimation();
+
+});
+    </script>
+</body>
+</html>
